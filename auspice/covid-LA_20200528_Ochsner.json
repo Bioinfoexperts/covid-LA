@@ -1,0 +1,4294 @@
+{
+  "meta": {
+    "build_url": "https://github.com/nextstrain/ncov",
+    "colorings": [
+      {
+        "key": "clade_membership",
+        "title": "Clade",
+        "type": "categorical"
+      },
+      {
+        "key": "num_date",
+        "title": "Sampling date",
+        "type": "continuous"
+      },
+      {
+        "key": "gt",
+        "title": "Genotype",
+        "type": "categorical"
+      },
+      {
+        "key": "location",
+        "scale": [
+          [
+            "Wuhan",
+            "#4C90C0"
+          ]
+        ],
+        "title": "Location",
+        "type": "categorical"
+      },
+      {
+        "key": "division",
+        "scale": [
+          [
+            "Hubei",
+            "#4C90C0"
+          ],
+          [
+            "Louisiana",
+            "#AEBD50"
+          ]
+        ],
+        "title": "Admin Division",
+        "type": "categorical"
+      },
+      {
+        "key": "country",
+        "scale": [
+          [
+            "China",
+            "#4C90C0"
+          ],
+          [
+            "USA",
+            "#AEBD50"
+          ]
+        ],
+        "title": "Country",
+        "type": "categorical"
+      },
+      {
+        "key": "region",
+        "scale": [
+          [
+            "Asia",
+            "#4C90C0"
+          ],
+          [
+            "North America",
+            "#AEBD50"
+          ]
+        ],
+        "title": "Region",
+        "type": "categorical"
+      },
+      {
+        "key": "host",
+        "title": "Host",
+        "type": "categorical"
+      },
+      {
+        "key": "age",
+        "title": "Age",
+        "type": "continuous"
+      },
+      {
+        "key": "sex",
+        "title": "Sex",
+        "type": "categorical"
+      },
+      {
+        "key": "author",
+        "title": "Authors",
+        "type": "categorical"
+      },
+      {
+        "key": "originating_lab",
+        "title": "Originating Lab",
+        "type": "categorical"
+      },
+      {
+        "key": "submitting_lab",
+        "title": "Submitting Lab",
+        "type": "categorical"
+      },
+      {
+        "key": "recency",
+        "scale": [
+          [
+            "Older",
+            "#416DCE"
+          ],
+          [
+            "One month ago",
+            "#59A3AA"
+          ],
+          [
+            "New",
+            "#E1502A"
+          ]
+        ],
+        "title": "Submission Date",
+        "type": "categorical"
+      },
+      {
+        "key": "country_exposure",
+        "title": "Country of exposure",
+        "type": "categorical"
+      },
+      {
+        "key": "division_exposure",
+        "title": "Division of exposure",
+        "type": "categorical"
+      },
+      {
+        "key": "region_exposure",
+        "title": "Region of exposure",
+        "type": "categorical"
+      },
+      {
+        "key": "recency",
+        "scale": [
+          [
+            "Older",
+            "#416DCE"
+          ],
+          [
+            "One month ago",
+            "#59A3AA"
+          ],
+          [
+            "New",
+            "#E1502A"
+          ]
+        ],
+        "title": "Submission Date",
+        "type": "categorical"
+      }
+    ],
+    "description": "[\u8bf7\u70b9\u51fb\u8fd9\u91cc\u67e5\u770b\u4e2d\u6587\u7248\u672c](/ncov/zh)\n\n[Latest Nextstrain COVID-19 situation report in English](https://nextstrain.org/narratives/ncov/sit-rep/2020-04-17) and [in other languages](https://nextstrain.org/narratives/ncov/sit-rep/). Follow [@nextstrain](https://twitter.com/nextstrain) for continual updates to data and analysis.\n\nThis phylogeny shows evolutionary relationships of hCoV-19 (or SARS-CoV-2) viruses from the ongoing novel coronavirus COVID-19 pandemic. This phylogeny shows an initial emergence in Wuhan, China, in Nov-Dec 2019 followed by sustained human-to-human transmission leading to sampled infections. Although the genetic relationships among sampled viruses are quite clear, there is considerable uncertainty surrounding estimates of specific transmission dates and in reconstruction of geographic spread. Please be aware that specific inferred transmission patterns are only a hypothesis.\n\nThere are thousands of complete genomes available now and this number increases by hundreds of every day. This visualization can only handle ~3000 genomes in a single view for performance and legibility reasons. Because of this we have to subsample available genome data for these analysis views. Our primary [global analysis](/ncov/global/) subsamples to 120 genomes per admin division per month. This will result in a more equitable global sequence distribution, but it hides samples available from regions that are doing lots of sequencing. To mitigate against this, we've set up separate analyses to focus on particular regions. They are available on the \"Dataset\" dropdown on the left or by clicking on the following links: [Africa](/ncov/africa/), [Asia](/ncov/asia/), [Europe](/ncov/europe/), [North America](/ncov/north-america/), [Oceania](/ncov/oceania/) and [South America](/ncov/south-america/).\n\nSite numbering and genome structure uses [Wuhan-Hu-1/2019](https://www.ncbi.nlm.nih.gov/nuccore/MN908947) as reference. The phylogeny is rooted relative to early samples from Wuhan. Temporal resolution assumes a nucleotide substitution rate of 8 &times; 10^-4 subs per site per year. Full details on bioinformatic processing can be found [here](https://github.com/nextstrain/ncov). \n\nPhylogenetic context of nCoV in SARS-related betacoronaviruses can be seen [here](https://nextstrain.org/groups/blab/sars-like-cov).\n\nWe gratefully acknowledge the authors, originating and submitting laboratories of the genetic sequence and metadata made available through [GISAID](https://gisaid.org) on which this research is based. A full listing of all originating and submitting laboratories is available below. An attribution table is available by clicking on \"Download Data\" at the bottom of the page and then clicking on \"Strain Metadata\" in the resulting dialog box.\n",
+    "display_defaults": {
+      "branch_label": "none",
+      "color_by": "country",
+      "distance_measure": "num_date",
+      "geo_resolution": "country",
+      "map_triplicate": true
+    },
+    "filters": [
+      "recency",
+      "location",
+      "division",
+      "country",
+      "region",
+      "host",
+      "author"
+    ],
+    "genome_annotations": {
+      "E": {
+        "end": 26472,
+        "seqid": "config/reference.gb",
+        "start": 26245,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "M": {
+        "end": 27191,
+        "seqid": "config/reference.gb",
+        "start": 26523,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "N": {
+        "end": 29533,
+        "seqid": "config/reference.gb",
+        "start": 28274,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF10": {
+        "end": 29674,
+        "seqid": "config/reference.gb",
+        "start": 29558,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF14": {
+        "end": 28955,
+        "seqid": "config/reference.gb",
+        "start": 28734,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF1a": {
+        "end": 13468,
+        "seqid": "config/reference.gb",
+        "start": 266,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF1b": {
+        "end": 21555,
+        "seqid": "config/reference.gb",
+        "start": 13468,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF3a": {
+        "end": 26220,
+        "seqid": "config/reference.gb",
+        "start": 25393,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF6": {
+        "end": 27387,
+        "seqid": "config/reference.gb",
+        "start": 27202,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF7a": {
+        "end": 27759,
+        "seqid": "config/reference.gb",
+        "start": 27394,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF7b": {
+        "end": 27887,
+        "seqid": "config/reference.gb",
+        "start": 27756,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF8": {
+        "end": 28259,
+        "seqid": "config/reference.gb",
+        "start": 27894,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "ORF9b": {
+        "end": 28577,
+        "seqid": "config/reference.gb",
+        "start": 28284,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "S": {
+        "end": 25384,
+        "seqid": "config/reference.gb",
+        "start": 21563,
+        "strand": "+",
+        "type": "CDS"
+      },
+      "nuc": {
+        "end": 29903,
+        "seqid": "config/reference.gb",
+        "start": 1,
+        "strand": "+",
+        "type": "source"
+      }
+    },
+    "geo_resolutions": [
+      {
+        "demes": {
+          "Wuhan": {
+            "latitude": 30.554807,
+            "longitude": 114.271501
+          }
+        },
+        "key": "location"
+      },
+      {
+        "demes": {
+          "Hubei": {
+            "latitude": 31.095477,
+            "longitude": 112.676644
+          },
+          "Louisiana": {
+            "latitude": 30.9843,
+            "longitude": -91.9623
+          }
+        },
+        "key": "division"
+      },
+      {
+        "demes": {
+          "China": {
+            "latitude": 35.000074,
+            "longitude": 104.999927
+          },
+          "USA": {
+            "latitude": 39.7837304,
+            "longitude": -100.4458824
+          }
+        },
+        "key": "country"
+      },
+      {
+        "demes": {
+          "Asia": {
+            "latitude": 30.451098,
+            "longitude": 86.654576
+          },
+          "North America": {
+            "latitude": 28.2367447,
+            "longitude": -97.738017
+          }
+        },
+        "key": "region"
+      }
+    ],
+    "maintainers": [
+      {
+        "name": "the Nextstrain team",
+        "url": "https://nextstrain.org/"
+      }
+    ],
+    "panels": [
+      "tree",
+      "map",
+      "entropy"
+    ],
+    "title": "Genomic epidemiology of novel coronavirus - Global subsampling",
+    "updated": "2020-05-28"
+  },
+  "tree": {
+    "branch_attrs": {
+      "mutations": {}
+    },
+    "children": [
+      {
+        "branch_attrs": {
+          "mutations": {}
+        },
+        "name": "Wuhan-Hu-1/2019",
+        "node_attrs": {
+          "author": {
+            "author": "Zhang et al",
+            "value": "Zhang et al"
+          },
+          "clade_membership": {
+            "value": "unassigned"
+          },
+          "country": {
+            "confidence": {
+              "China": 0.9999999999999999
+            },
+            "entropy": -9.99866855976916e-13,
+            "value": "China"
+          },
+          "div": 6.233650313861006e-18,
+          "division": {
+            "value": "Hubei"
+          },
+          "division_exposure": {
+            "value": "Hubei"
+          },
+          "genbank_accession": {
+            "value": "MN908947"
+          },
+          "gisaid_epi_isl": {
+            "value": "EPI_ISL_402125"
+          },
+          "host": {
+            "value": "nonLA"
+          },
+          "location": {
+            "value": "Wuhan"
+          },
+          "num_date": {
+            "confidence": [
+              2019.9849315068493,
+              2019.9849315068493
+            ],
+            "value": 2019.9849315068493
+          },
+          "recency": {
+            "value": "Older"
+          },
+          "region": {
+            "value": "Asia"
+          },
+          "region_exposure": {
+            "confidence": {
+              "Asia": 0.9999999999999999
+            },
+            "entropy": -9.99866855976916e-13,
+            "value": "Asia"
+          },
+          "submitting_lab": {
+            "value": "National Institute for Communicable Disease Control and Prevention (ICDC) Chinese Center for Disease Control and Prevention (China CDC)"
+          },
+          "url": "https://www.gisaid.org"
+        }
+      },
+      {
+        "branch_attrs": {
+          "labels": {
+            "aa": "ORF1a: L2235I, N3833K"
+          },
+          "mutations": {
+            "ORF1a": [
+              "L2235I",
+              "N3833K"
+            ],
+            "nuc": [
+              "C6968A",
+              "T11764A"
+            ]
+          }
+        },
+        "name": "Wuhan/WH01/2019",
+        "node_attrs": {
+          "age": {
+            "value": "44"
+          },
+          "author": {
+            "author": "Weijun Chen et al",
+            "value": "Weijun Chen et al"
+          },
+          "clade_membership": {
+            "value": "unassigned"
+          },
+          "country": {
+            "confidence": {
+              "China": 0.9999999999999999
+            },
+            "entropy": -9.99866855976916e-13,
+            "value": "China"
+          },
+          "div": 2.010574178066599,
+          "division": {
+            "value": "Hubei"
+          },
+          "division_exposure": {
+            "value": "Hubei"
+          },
+          "genbank_accession": {
+            "value": "LR757998"
+          },
+          "gisaid_epi_isl": {
+            "value": "EPI_ISL_406798"
+          },
+          "host": {
+            "value": "nonLA"
+          },
+          "location": {
+            "value": "Wuhan"
+          },
+          "num_date": {
+            "confidence": [
+              2019.9849315068493,
+              2019.9849315068493
+            ],
+            "value": 2019.9849315068493
+          },
+          "originating_lab": {
+            "value": "General Hospital of Central Theater Command of People's Liberation Army of China"
+          },
+          "recency": {
+            "value": "Older"
+          },
+          "region": {
+            "value": "Asia"
+          },
+          "region_exposure": {
+            "confidence": {
+              "Asia": 0.9999999999999999
+            },
+            "entropy": -9.99866855976916e-13,
+            "value": "Asia"
+          },
+          "sex": {
+            "value": "Male"
+          },
+          "submitting_lab": {
+            "value": "BGI & Institute of Microbiology, Chinese Academy of Sciences & Shandong First Medical University & Shandong Academy of Medical Sciences & General Hospital of Central Theater Command of People's Liberation Army of China"
+          },
+          "url": "https://www.gisaid.org"
+        }
+      },
+      {
+        "branch_attrs": {
+          "labels": {
+            "aa": "ORF1a: T265I; ORF1b: P314L; ORF3a: Q57H; ORF8: S24L; S: D614G",
+            "clade": "A2a"
+          },
+          "mutations": {
+            "ORF1a": [
+              "T265I"
+            ],
+            "ORF1b": [
+              "P314L"
+            ],
+            "ORF3a": [
+              "Q57H"
+            ],
+            "ORF8": [
+              "S24L"
+            ],
+            "S": [
+              "D614G"
+            ],
+            "nuc": [
+              "C241T",
+              "C1059T",
+              "C3037T",
+              "C14408T",
+              "A23403G",
+              "G25563T",
+              "C27964T"
+            ]
+          }
+        },
+        "children": [
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "E: F26L"
+              },
+              "mutations": {
+                "E": [
+                  "F26L"
+                ],
+                "nuc": [
+                  "A12082G",
+                  "T26320C"
+                ]
+              }
+            },
+            "name": "USA/LA-BIE-080/2020",
+            "node_attrs": {
+              "age": {
+                "value": "65"
+              },
+              "author": {
+                "author": "Amy Feehan et al",
+                "value": "Amy Feehan et al"
+              },
+              "clade_membership": {
+                "value": "A2a"
+              },
+              "country": {
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "USA"
+              },
+              "div": 9.006582517576136,
+              "division": {
+                "value": "Louisiana"
+              },
+              "division_exposure": {
+                "value": "Louisiana"
+              },
+              "gisaid_epi_isl": {
+                "value": "EPI_ISL_436948"
+              },
+              "host": {
+                "value": "LA"
+              },
+              "num_date": {
+                "confidence": [
+                  2020.2636612021859,
+                  2020.2636612021859
+                ],
+                "value": 2020.2636612021859
+              },
+              "originating_lab": {
+                "value": "Ochsner Health"
+              },
+              "recency": {
+                "value": "One month ago"
+              },
+              "region": {
+                "value": "North America"
+              },
+              "region_exposure": {
+                "confidence": {
+                  "North America": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "North America"
+              },
+              "sex": {
+                "value": "Female"
+              },
+              "submitting_lab": {
+                "value": "Bioinfoexperts, LLC"
+              },
+              "url": "https://www.gisaid.org"
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "ORF1a: L3060F, I3619T"
+              },
+              "mutations": {
+                "ORF1a": [
+                  "L3060F",
+                  "I3619T"
+                ],
+                "nuc": [
+                  "G598T",
+                  "C9443T",
+                  "T11121C"
+                ]
+              }
+            },
+            "name": "USA/LA-BIE-097/2020",
+            "node_attrs": {
+              "age": {
+                "value": "66"
+              },
+              "author": {
+                "author": "Amy Feehan et al",
+                "value": "Amy Feehan et al"
+              },
+              "clade_membership": {
+                "value": "A2a"
+              },
+              "country": {
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "USA"
+              },
+              "div": 10.011933091089094,
+              "division": {
+                "value": "Louisiana"
+              },
+              "division_exposure": {
+                "value": "Louisiana"
+              },
+              "gisaid_epi_isl": {
+                "value": "EPI_ISL_426628"
+              },
+              "host": {
+                "value": "LA"
+              },
+              "num_date": {
+                "confidence": [
+                  2020.2636612021859,
+                  2020.2636612021859
+                ],
+                "value": 2020.2636612021859
+              },
+              "originating_lab": {
+                "value": "Ochsner Health"
+              },
+              "recency": {
+                "value": "Older"
+              },
+              "region": {
+                "value": "North America"
+              },
+              "region_exposure": {
+                "confidence": {
+                  "North America": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "North America"
+              },
+              "sex": {
+                "value": "Female"
+              },
+              "submitting_lab": {
+                "value": "BioInfoExperts, LLC"
+              },
+              "url": "https://www.gisaid.org"
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "ORF1a: S2822F; ORF1b: M2025I"
+              },
+              "mutations": {
+                "ORF1a": [
+                  "S2822F"
+                ],
+                "ORF1b": [
+                  "M2025I"
+                ],
+                "nuc": [
+                  "C8730T",
+                  "G19542T",
+                  "G29781T"
+                ]
+              }
+            },
+            "name": "USA/LA-BIE-063/2020",
+            "node_attrs": {
+              "author": {
+                "author": "Amy Feehan et al",
+                "value": "Amy Feehan et al"
+              },
+              "clade_membership": {
+                "value": "A2a"
+              },
+              "country": {
+                "confidence": {
+                  "USA": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "USA"
+              },
+              "div": 10.01196528299468,
+              "division": {
+                "value": "Louisiana"
+              },
+              "division_exposure": {
+                "value": "Louisiana"
+              },
+              "gisaid_epi_isl": {
+                "value": "EPI_ISL_426628"
+              },
+              "host": {
+                "value": "LA"
+              },
+              "num_date": {
+                "confidence": [
+                  2020.2636612021859,
+                  2020.2636612021859
+                ],
+                "value": 2020.2636612021859
+              },
+              "originating_lab": {
+                "value": "Ochsner Health"
+              },
+              "recency": {
+                "value": "New"
+              },
+              "region": {
+                "value": "North America"
+              },
+              "region_exposure": {
+                "confidence": {
+                  "North America": 1.0
+                },
+                "entropy": -1.000088900581841e-12,
+                "value": "North America"
+              },
+              "submitting_lab": {
+                "value": "BioInfoExperts, LLC"
+              },
+              "url": "https://www.gisaid.org"
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "ORF1b: R1605I"
+              },
+              "mutations": {
+                "ORF1b": [
+                  "R1605I"
+                ],
+                "nuc": [
+                  "G18281T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1a: E755K, L3352F"
+                  },
+                  "mutations": {
+                    "ORF1a": [
+                      "E755K",
+                      "L3352F"
+                    ],
+                    "nuc": [
+                      "G2528A",
+                      "C10319T",
+                      "C11674T"
+                    ]
+                  }
+                },
+                "name": "USA/LA-BIE-096/2020",
+                "node_attrs": {
+                  "age": {
+                    "value": "65"
+                  },
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "USA"
+                  },
+                  "div": 11.011305642337794,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_426627"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.2636612021859,
+                      2020.2636612021859
+                    ],
+                    "value": 2020.2636612021859
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "Older"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "North America"
+                  },
+                  "sex": {
+                    "value": "Female"
+                  },
+                  "submitting_lab": {
+                    "value": "BioInfoExperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "name": "USA/LA-BIE-072/2020",
+                "node_attrs": {
+                  "age": {
+                    "value": "65"
+                  },
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "USA"
+                  },
+                  "div": 7.995446783857139,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_436940"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.26912568306,
+                      2020.26912568306
+                    ],
+                    "value": 2020.26912568306
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "One month ago"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "North America"
+                  },
+                  "sex": {
+                    "value": "Female"
+                  },
+                  "submitting_lab": {
+                    "value": "Bioinfoexperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              }
+            ],
+            "name": "NODE_0000027",
+            "node_attrs": {
+              "clade_membership": {
+                "value": "A2a"
+              },
+              "div": 7.995446783856728,
+              "num_date": {
+                "confidence": [
+                  2020.2303790019466,
+                  2020.2563176402414
+                ],
+                "value": 2020.2455278781144
+              },
+              "region_exposure": {
+                "confidence": {
+                  "North America": 0.9997073188765855
+                },
+                "entropy": 0.0026740168393736474,
+                "value": "North America"
+              },
+              "country": {
+                "confidence": {
+                  "USA": 0.9997073188765855
+                },
+                "entropy": 0.0026740168393736474,
+                "value": "USA"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "ORF8: S69L"
+              },
+              "mutations": {
+                "ORF8": [
+                  "S69L"
+                ],
+                "nuc": [
+                  "C28099T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "S: G72V"
+                  },
+                  "mutations": {
+                    "S": [
+                      "G72V"
+                    ],
+                    "nuc": [
+                      "G21777T"
+                    ]
+                  }
+                },
+                "name": "USA/LA-BIE-070/2020",
+                "node_attrs": {
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 0.9999999999999999
+                    },
+                    "entropy": -9.99866855976916e-13,
+                    "value": "USA"
+                  },
+                  "div": 9.000686782230053,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_426628"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.2636612021859,
+                      2020.2636612021859
+                    ],
+                    "value": 2020.2636612021859
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "New"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 0.9999999999999999
+                    },
+                    "entropy": -9.99866855976916e-13,
+                    "value": "North America"
+                  },
+                  "submitting_lab": {
+                    "value": "BioInfoExperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "name": "USA/LA-BIE-061/2020",
+                "node_attrs": {
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 0.9999999999999999
+                    },
+                    "entropy": -9.99866855976916e-13,
+                    "value": "USA"
+                  },
+                  "div": 7.995447550823133,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_426628"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.2636612021859,
+                      2020.2636612021859
+                    ],
+                    "value": 2020.2636612021859
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "New"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 0.9999999999999999
+                    },
+                    "entropy": -9.99866855976916e-13,
+                    "value": "North America"
+                  },
+                  "submitting_lab": {
+                    "value": "BioInfoExperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "C106T"
+                    ]
+                  }
+                },
+                "name": "USA/LA-BIE-066/2020",
+                "node_attrs": {
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 0.9999999999999999
+                    },
+                    "entropy": -9.99866855976916e-13,
+                    "value": "USA"
+                  },
+                  "div": 9.000691101551027,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_426628"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.2636612021859,
+                      2020.2636612021859
+                    ],
+                    "value": 2020.2636612021859
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "New"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 0.9999999999999999
+                    },
+                    "entropy": -9.99866855976916e-13,
+                    "value": "North America"
+                  },
+                  "submitting_lab": {
+                    "value": "BioInfoExperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              }
+            ],
+            "name": "NODE_0000012",
+            "node_attrs": {
+              "clade_membership": {
+                "value": "A2a"
+              },
+              "div": 7.995447550822723,
+              "num_date": {
+                "confidence": [
+                  2020.2335360067925,
+                  2020.2608794196892
+                ],
+                "value": 2020.2468056272246
+              },
+              "region_exposure": {
+                "confidence": {
+                  "North America": 0.9999741155455438
+                },
+                "entropy": 0.00029927230824209244,
+                "value": "North America"
+              },
+              "country": {
+                "confidence": {
+                  "USA": 0.9999741155455438
+                },
+                "entropy": 0.00029927230824209244,
+                "value": "USA"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "mutations": {}
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C9724T"
+                        ]
+                      }
+                    },
+                    "name": "USA/LA-BIE-062/2020",
+                    "node_attrs": {
+                      "author": {
+                        "author": "Amy Feehan et al",
+                        "value": "Amy Feehan et al"
+                      },
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "USA"
+                      },
+                      "div": 8.001345653702355,
+                      "division": {
+                        "value": "Louisiana"
+                      },
+                      "division_exposure": {
+                        "value": "Louisiana"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_426628"
+                      },
+                      "host": {
+                        "value": "LA"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.2636612021859,
+                          2020.2636612021859
+                        ],
+                        "value": 2020.2636612021859
+                      },
+                      "originating_lab": {
+                        "value": "Ochsner Health"
+                      },
+                      "recency": {
+                        "value": "New"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "North America"
+                      },
+                      "submitting_lab": {
+                        "value": "BioInfoExperts, LLC"
+                      },
+                      "url": "https://www.gisaid.org"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "C1225T"
+                        ]
+                      }
+                    },
+                    "name": "USA/LA-BIE-075/2020",
+                    "node_attrs": {
+                      "age": {
+                        "value": "57"
+                      },
+                      "author": {
+                        "author": "Amy Feehan et al",
+                        "value": "Amy Feehan et al"
+                      },
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "USA"
+                      },
+                      "div": 8.001345653702355,
+                      "division": {
+                        "value": "Louisiana"
+                      },
+                      "division_exposure": {
+                        "value": "Louisiana"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_436943"
+                      },
+                      "host": {
+                        "value": "LA"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.2581967213114,
+                          2020.2581967213114
+                        ],
+                        "value": 2020.2581967213114
+                      },
+                      "originating_lab": {
+                        "value": "Ochsner Health"
+                      },
+                      "recency": {
+                        "value": "One month ago"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "North America"
+                      },
+                      "sex": {
+                        "value": "Male"
+                      },
+                      "submitting_lab": {
+                        "value": "Bioinfoexperts, LLC"
+                      },
+                      "url": "https://www.gisaid.org"
+                    }
+                  }
+                ],
+                "name": "NODE_0000005",
+                "node_attrs": {
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "div": 6.996116876345026,
+                  "num_date": {
+                    "confidence": [
+                      2020.2336374383456,
+                      2020.2559256396455
+                    ],
+                    "value": 2020.2463219480162
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 0.9996804328357557
+                    },
+                    "entropy": 0.0028915661866319763,
+                    "value": "North America"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 0.9996804328357557
+                    },
+                    "entropy": 0.0028915661866319763,
+                    "value": "USA"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "name": "USA/LA-BIE-086/2020",
+                        "node_attrs": {
+                          "age": {
+                            "value": "50"
+                          },
+                          "author": {
+                            "author": "Amy Feehan et al",
+                            "value": "Amy Feehan et al"
+                          },
+                          "clade_membership": {
+                            "value": "A2a"
+                          },
+                          "country": {
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "USA"
+                          },
+                          "div": 6.996116876345858,
+                          "division": {
+                            "value": "Louisiana"
+                          },
+                          "division_exposure": {
+                            "value": "Louisiana"
+                          },
+                          "gisaid_epi_isl": {
+                            "value": "EPI_ISL_436954"
+                          },
+                          "host": {
+                            "value": "LA"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.2718579234972,
+                              2020.2718579234972
+                            ],
+                            "value": 2020.2718579234972
+                          },
+                          "originating_lab": {
+                            "value": "Ochsner Health"
+                          },
+                          "recency": {
+                            "value": "One month ago"
+                          },
+                          "region": {
+                            "value": "North America"
+                          },
+                          "region_exposure": {
+                            "confidence": {
+                              "North America": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "North America"
+                          },
+                          "sex": {
+                            "value": "Male"
+                          },
+                          "submitting_lab": {
+                            "value": "Bioinfoexperts, LLC"
+                          },
+                          "url": "https://www.gisaid.org"
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "labels": {
+                            "aa": "ORF1a: F190L"
+                          },
+                          "mutations": {
+                            "ORF1a": [
+                              "F190L"
+                            ],
+                            "nuc": [
+                              "T833C"
+                            ]
+                          }
+                        },
+                        "name": "USA/LA-BIE-056/2020",
+                        "node_attrs": {
+                          "author": {
+                            "author": "Amy Feehan et al",
+                            "value": "Amy Feehan et al"
+                          },
+                          "clade_membership": {
+                            "value": "A2a"
+                          },
+                          "country": {
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "USA"
+                          },
+                          "div": 8.00133222195886,
+                          "division": {
+                            "value": "Louisiana"
+                          },
+                          "division_exposure": {
+                            "value": "Louisiana"
+                          },
+                          "gisaid_epi_isl": {
+                            "value": "EPI_ISL_426628"
+                          },
+                          "host": {
+                            "value": "LA"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.2636612021859,
+                              2020.2636612021859
+                            ],
+                            "value": 2020.2636612021859
+                          },
+                          "originating_lab": {
+                            "value": "Ochsner Health"
+                          },
+                          "recency": {
+                            "value": "New"
+                          },
+                          "region": {
+                            "value": "North America"
+                          },
+                          "region_exposure": {
+                            "confidence": {
+                              "North America": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "North America"
+                          },
+                          "submitting_lab": {
+                            "value": "BioInfoExperts, LLC"
+                          },
+                          "url": "https://www.gisaid.org"
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000007",
+                    "node_attrs": {
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "div": 6.9961168763454475,
+                      "num_date": {
+                        "confidence": [
+                          2020.2368041216869,
+                          2020.262961435702
+                        ],
+                        "value": 2020.2456940342306
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 0.9996780336247469
+                        },
+                        "entropy": 0.002910866586294948,
+                        "value": "North America"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 0.9996780336247469
+                        },
+                        "entropy": 0.002910866586294948,
+                        "value": "USA"
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "USA/LA-BIE-055/2020",
+                            "node_attrs": {
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 6.99611687634628,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_426628"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "New"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "submitting_lab": {
+                                "value": "BioInfoExperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "USA/LA-BIE-069/2020",
+                            "node_attrs": {
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 6.99611687634628,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_426628"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "New"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "submitting_lab": {
+                                "value": "BioInfoExperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000009",
+                        "node_attrs": {
+                          "clade_membership": {
+                            "value": "A2a"
+                          },
+                          "div": 6.996116876345869,
+                          "num_date": {
+                            "confidence": [
+                              2020.2449732853604,
+                              2020.2629113487817
+                            ],
+                            "value": 2020.2548166896663
+                          },
+                          "region_exposure": {
+                            "confidence": {
+                              "North America": 0.9996782044320889
+                            },
+                            "entropy": 0.002909493123295045,
+                            "value": "North America"
+                          },
+                          "country": {
+                            "confidence": {
+                              "USA": 0.9996782044320889
+                            },
+                            "entropy": 0.002909493123295045,
+                            "value": "USA"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "USA/LA-BIE-059/2020",
+                            "node_attrs": {
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 6.99611687634628,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_426628"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "New"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "submitting_lab": {
+                                "value": "BioInfoExperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "USA/LA-BIE-078/2020",
+                            "node_attrs": {
+                              "age": {
+                                "value": "55"
+                              },
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 6.99611687634628,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_436946"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.266393442623,
+                                  2020.266393442623
+                                ],
+                                "value": 2020.266393442623
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "One month ago"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "sex": {
+                                "value": "Female"
+                              },
+                              "submitting_lab": {
+                                "value": "Bioinfoexperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000010",
+                        "node_attrs": {
+                          "clade_membership": {
+                            "value": "A2a"
+                          },
+                          "div": 6.996116876345869,
+                          "num_date": {
+                            "confidence": [
+                              2020.245753904904,
+                              2020.2636612021859
+                            ],
+                            "value": 2020.254850122773
+                          },
+                          "region_exposure": {
+                            "confidence": {
+                              "North America": 0.9996782044320889
+                            },
+                            "entropy": 0.002909493123295045,
+                            "value": "North America"
+                          },
+                          "country": {
+                            "confidence": {
+                              "USA": 0.9996782044320889
+                            },
+                            "entropy": 0.002909493123295045,
+                            "value": "USA"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000008",
+                    "node_attrs": {
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "div": 6.9961168763454475,
+                      "num_date": {
+                        "confidence": [
+                          2020.2237772993292,
+                          2020.2623145535674
+                        ],
+                        "value": 2020.2465204351051
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 0.999622432914504
+                        },
+                        "entropy": 0.0033533898144202726,
+                        "value": "North America"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 0.999622432914504
+                        },
+                        "entropy": 0.0033533898144202726,
+                        "value": "USA"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000006",
+                "node_attrs": {
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "div": 6.996116876345026,
+                  "num_date": {
+                    "confidence": [
+                      2020.2366026316656,
+                      2020.2491639649497
+                    ],
+                    "value": 2020.2381306648097
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 0.9996202181161347
+                    },
+                    "entropy": 0.003370839006542922,
+                    "value": "North America"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 0.9996202181161347
+                    },
+                    "entropy": 0.003370839006542922,
+                    "value": "USA"
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000004",
+            "node_attrs": {
+              "clade_membership": {
+                "value": "A2a"
+              },
+              "div": 6.996116876344604,
+              "num_date": {
+                "confidence": [
+                  2020.2333258374003,
+                  2020.2431368831076
+                ],
+                "value": 2020.2378653168257
+              },
+              "region_exposure": {
+                "confidence": {
+                  "North America": 0.9996513278364252
+                },
+                "entropy": 0.003124522412904705,
+                "value": "North America"
+              },
+              "country": {
+                "confidence": {
+                  "USA": 0.9996513278364252
+                },
+                "entropy": 0.003124522412904705,
+                "value": "USA"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "ORF1a: T3308I"
+              },
+              "mutations": {
+                "ORF1a": [
+                  "T3308I"
+                ],
+                "nuc": [
+                  "C10188T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "name": "USA/LA-BIE-073/2020",
+                    "node_attrs": {
+                      "age": {
+                        "value": "42"
+                      },
+                      "author": {
+                        "author": "Amy Feehan et al",
+                        "value": "Amy Feehan et al"
+                      },
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "USA"
+                      },
+                      "div": 7.995447550823555,
+                      "division": {
+                        "value": "Louisiana"
+                      },
+                      "division_exposure": {
+                        "value": "Louisiana"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_436941"
+                      },
+                      "host": {
+                        "value": "LA"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.26912568306,
+                          2020.26912568306
+                        ],
+                        "value": 2020.26912568306
+                      },
+                      "originating_lab": {
+                        "value": "Ochsner Health"
+                      },
+                      "recency": {
+                        "value": "One month ago"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "North America"
+                      },
+                      "sex": {
+                        "value": "Female"
+                      },
+                      "submitting_lab": {
+                        "value": "Bioinfoexperts, LLC"
+                      },
+                      "url": "https://www.gisaid.org"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "name": "USA/LA-BIE-071/2020",
+                    "node_attrs": {
+                      "age": {
+                        "value": "68"
+                      },
+                      "author": {
+                        "author": "Amy Feehan et al",
+                        "value": "Amy Feehan et al"
+                      },
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "USA"
+                      },
+                      "div": 7.995447550823555,
+                      "division": {
+                        "value": "Louisiana"
+                      },
+                      "division_exposure": {
+                        "value": "Louisiana"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_436939"
+                      },
+                      "host": {
+                        "value": "LA"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.2636612021859,
+                          2020.2636612021859
+                        ],
+                        "value": 2020.2636612021859
+                      },
+                      "originating_lab": {
+                        "value": "Ochsner Health"
+                      },
+                      "recency": {
+                        "value": "One month ago"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "North America"
+                      },
+                      "sex": {
+                        "value": "Female"
+                      },
+                      "submitting_lab": {
+                        "value": "Bioinfoexperts, LLC"
+                      },
+                      "url": "https://www.gisaid.org"
+                    }
+                  }
+                ],
+                "name": "NODE_0000013",
+                "node_attrs": {
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "div": 7.995447550823145,
+                  "num_date": {
+                    "confidence": [
+                      2020.2418588260718,
+                      2020.2626166135217
+                    ],
+                    "value": 2020.2602900871937
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 0.9996828645527407
+                    },
+                    "entropy": 0.0028719859064386135,
+                    "value": "North America"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 0.9996828645527407
+                    },
+                    "entropy": 0.0028719859064386135,
+                    "value": "USA"
+                  }
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {
+                    "nuc": [
+                      "T24982C"
+                    ]
+                  }
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "mutations": {
+                        "nuc": [
+                          "A9793G"
+                        ]
+                      }
+                    },
+                    "name": "USA/LA-BIE-051/2020",
+                    "node_attrs": {
+                      "author": {
+                        "author": "Amy Feehan et al",
+                        "value": "Amy Feehan et al"
+                      },
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "USA"
+                      },
+                      "div": 9.999993157781809,
+                      "division": {
+                        "value": "Louisiana"
+                      },
+                      "division_exposure": {
+                        "value": "Louisiana"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_426628"
+                      },
+                      "host": {
+                        "value": "LA"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.2636612021859,
+                          2020.2636612021859
+                        ],
+                        "value": 2020.2636612021859
+                      },
+                      "originating_lab": {
+                        "value": "Ochsner Health"
+                      },
+                      "recency": {
+                        "value": "New"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "North America"
+                      },
+                      "submitting_lab": {
+                        "value": "BioInfoExperts, LLC"
+                      },
+                      "url": "https://www.gisaid.org"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "ORF7a: C23F"
+                      },
+                      "mutations": {
+                        "ORF7a": [
+                          "C23F"
+                        ],
+                        "nuc": [
+                          "G27461T"
+                        ]
+                      }
+                    },
+                    "name": "USA/LA-BIE-090/2020",
+                    "node_attrs": {
+                      "age": {
+                        "value": "21"
+                      },
+                      "author": {
+                        "author": "Amy Feehan et al",
+                        "value": "Amy Feehan et al"
+                      },
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "USA"
+                      },
+                      "div": 10.000004547187178,
+                      "division": {
+                        "value": "Louisiana"
+                      },
+                      "division_exposure": {
+                        "value": "Louisiana"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_436958"
+                      },
+                      "host": {
+                        "value": "LA"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.2636612021859,
+                          2020.2636612021859
+                        ],
+                        "value": 2020.2636612021859
+                      },
+                      "originating_lab": {
+                        "value": "Ochsner Health"
+                      },
+                      "recency": {
+                        "value": "One month ago"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "North America"
+                      },
+                      "sex": {
+                        "value": "Male"
+                      },
+                      "submitting_lab": {
+                        "value": "Bioinfoexperts, LLC"
+                      },
+                      "url": "https://www.gisaid.org"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "ORF1a: K1319E; ORF7a: V29L"
+                      },
+                      "mutations": {
+                        "ORF1a": [
+                          "K1319E"
+                        ],
+                        "ORF7a": [
+                          "V29L"
+                        ],
+                        "nuc": [
+                          "A4220G",
+                          "G27478T"
+                        ]
+                      }
+                    },
+                    "name": "USA/LA-BIE-089/2020",
+                    "node_attrs": {
+                      "age": {
+                        "value": "46"
+                      },
+                      "author": {
+                        "author": "Amy Feehan et al",
+                        "value": "Amy Feehan et al"
+                      },
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "USA"
+                      },
+                      "div": 11.005263398282647,
+                      "division": {
+                        "value": "Louisiana"
+                      },
+                      "division_exposure": {
+                        "value": "Louisiana"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_436957"
+                      },
+                      "host": {
+                        "value": "LA"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.2636612021859,
+                          2020.2636612021859
+                        ],
+                        "value": 2020.2636612021859
+                      },
+                      "originating_lab": {
+                        "value": "Ochsner Health"
+                      },
+                      "recency": {
+                        "value": "One month ago"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "North America"
+                      },
+                      "sex": {
+                        "value": "Female"
+                      },
+                      "submitting_lab": {
+                        "value": "Bioinfoexperts, LLC"
+                      },
+                      "url": "https://www.gisaid.org"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "ORF3a: L106F"
+                      },
+                      "mutations": {
+                        "ORF3a": [
+                          "L106F"
+                        ],
+                        "nuc": [
+                          "C25708T"
+                        ]
+                      }
+                    },
+                    "name": "USA/LA-BIE-077/2020",
+                    "node_attrs": {
+                      "age": {
+                        "value": "49"
+                      },
+                      "author": {
+                        "author": "Amy Feehan et al",
+                        "value": "Amy Feehan et al"
+                      },
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "USA"
+                      },
+                      "div": 10.000007617301355,
+                      "division": {
+                        "value": "Louisiana"
+                      },
+                      "division_exposure": {
+                        "value": "Louisiana"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_436945"
+                      },
+                      "host": {
+                        "value": "LA"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.2636612021859,
+                          2020.2636612021859
+                        ],
+                        "value": 2020.2636612021859
+                      },
+                      "originating_lab": {
+                        "value": "Ochsner Health"
+                      },
+                      "recency": {
+                        "value": "One month ago"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "North America"
+                      },
+                      "sex": {
+                        "value": "Female"
+                      },
+                      "submitting_lab": {
+                        "value": "Bioinfoexperts, LLC"
+                      },
+                      "url": "https://www.gisaid.org"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "labels": {
+                        "aa": "N: A381V; ORF1b: S598N"
+                      },
+                      "mutations": {
+                        "N": [
+                          "A381V"
+                        ],
+                        "ORF1b": [
+                          "S598N"
+                        ],
+                        "nuc": [
+                          "C2644T",
+                          "C4795T",
+                          "G15260A",
+                          "C29415T"
+                        ]
+                      }
+                    },
+                    "name": "USA/LA-BIE-064/2020",
+                    "node_attrs": {
+                      "author": {
+                        "author": "Amy Feehan et al",
+                        "value": "Amy Feehan et al"
+                      },
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "USA"
+                      },
+                      "div": 13.016062736265889,
+                      "division": {
+                        "value": "Louisiana"
+                      },
+                      "division_exposure": {
+                        "value": "Louisiana"
+                      },
+                      "gisaid_epi_isl": {
+                        "value": "EPI_ISL_426628"
+                      },
+                      "host": {
+                        "value": "LA"
+                      },
+                      "num_date": {
+                        "confidence": [
+                          2020.2636612021859,
+                          2020.2636612021859
+                        ],
+                        "value": 2020.2636612021859
+                      },
+                      "originating_lab": {
+                        "value": "Ochsner Health"
+                      },
+                      "recency": {
+                        "value": "New"
+                      },
+                      "region": {
+                        "value": "North America"
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 1.0
+                        },
+                        "entropy": -1.000088900581841e-12,
+                        "value": "North America"
+                      },
+                      "submitting_lab": {
+                        "value": "BioInfoExperts, LLC"
+                      },
+                      "url": "https://www.gisaid.org"
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "USA/LA-BIE-076/2020",
+                            "node_attrs": {
+                              "age": {
+                                "value": "24"
+                              },
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 8.994778839945278,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_436944"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "One month ago"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "sex": {
+                                "value": "Female"
+                              },
+                              "submitting_lab": {
+                                "value": "Bioinfoexperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "USA/LA-BIE-079/2020",
+                            "node_attrs": {
+                              "age": {
+                                "value": "32"
+                              },
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 8.994778839945278,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_436947"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "One month ago"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "sex": {
+                                "value": "Female"
+                              },
+                              "submitting_lab": {
+                                "value": "Bioinfoexperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000017",
+                        "node_attrs": {
+                          "clade_membership": {
+                            "value": "A2a"
+                          },
+                          "div": 8.994778839944868,
+                          "num_date": {
+                            "confidence": [
+                              2020.24730589105,
+                              2020.2623002617754
+                            ],
+                            "value": 2020.2602900871937
+                          },
+                          "region_exposure": {
+                            "confidence": {
+                              "North America": 0.9996808210925163
+                            },
+                            "entropy": 0.0028884411734320862,
+                            "value": "North America"
+                          },
+                          "country": {
+                            "confidence": {
+                              "USA": 0.9996808210925163
+                            },
+                            "entropy": 0.0028884411734320862,
+                            "value": "USA"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "USA/LA-BIE-054/2020",
+                            "node_attrs": {
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 8.994778839945278,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_426628"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "New"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "submitting_lab": {
+                                "value": "BioInfoExperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "USA/LA-BIE-081/2020",
+                            "node_attrs": {
+                              "age": {
+                                "value": "35"
+                              },
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 8.994778839945278,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_436949"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2581967213114,
+                                  2020.2581967213114
+                                ],
+                                "value": 2020.2581967213114
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "One month ago"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "sex": {
+                                "value": "Female"
+                              },
+                              "submitting_lab": {
+                                "value": "Bioinfoexperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000018",
+                        "node_attrs": {
+                          "clade_membership": {
+                            "value": "A2a"
+                          },
+                          "div": 8.994778839944868,
+                          "num_date": {
+                            "confidence": [
+                              2020.2472007911042,
+                              2020.2581967213114
+                            ],
+                            "value": 2020.2581967213114
+                          },
+                          "region_exposure": {
+                            "confidence": {
+                              "North America": 0.9996808210925163
+                            },
+                            "entropy": 0.0028884411734320862,
+                            "value": "North America"
+                          },
+                          "country": {
+                            "confidence": {
+                              "USA": 0.9996808210925163
+                            },
+                            "entropy": 0.0028884411734320862,
+                            "value": "USA"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000015",
+                    "node_attrs": {
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "div": 8.994778839944447,
+                      "num_date": {
+                        "confidence": [
+                          2020.2265103305579,
+                          2020.2561397697907
+                        ],
+                        "value": 2020.24812655504
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 0.9996563622244713
+                        },
+                        "entropy": 0.003084406966132649,
+                        "value": "North America"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 0.9996563622244713
+                        },
+                        "entropy": 0.003084406966132649,
+                        "value": "USA"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000016",
+                "node_attrs": {
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "div": 8.994778839944026,
+                  "num_date": {
+                    "confidence": [
+                      2020.234870318149,
+                      2020.250856578354
+                    ],
+                    "value": 2020.2394250940629
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 0.9999999785737932
+                    },
+                    "entropy": 3.9978211517030915e-07,
+                    "value": "North America"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 0.9999999785737932
+                    },
+                    "entropy": 3.9978211517030915e-07,
+                    "value": "USA"
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000014",
+            "node_attrs": {
+              "clade_membership": {
+                "value": "A2a"
+              },
+              "div": 7.995447550822723,
+              "num_date": {
+                "confidence": [
+                  2020.2245114944633,
+                  2020.2467983975207
+                ],
+                "value": 2020.2459308825023
+              },
+              "region_exposure": {
+                "confidence": {
+                  "North America": 0.9996828590502111
+                },
+                "entropy": 0.0028720302340239884,
+                "value": "North America"
+              },
+              "country": {
+                "confidence": {
+                  "USA": 0.9996828590502111
+                },
+                "entropy": 0.0028720302340239884,
+                "value": "USA"
+              }
+            }
+          },
+          {
+            "branch_attrs": {
+              "labels": {
+                "aa": "ORF1a: L3352F"
+              },
+              "mutations": {
+                "ORF1a": [
+                  "L3352F"
+                ],
+                "nuc": [
+                  "C10319T"
+                ]
+              }
+            },
+            "children": [
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1b: S933L; S: V1122L"
+                  },
+                  "mutations": {
+                    "ORF1b": [
+                      "S933L"
+                    ],
+                    "S": [
+                      "V1122L"
+                    ],
+                    "nuc": [
+                      "C16265T",
+                      "G24926T"
+                    ]
+                  }
+                },
+                "name": "USA/LA-BIE-094/2020",
+                "node_attrs": {
+                  "age": {
+                    "value": "82"
+                  },
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "USA"
+                  },
+                  "div": 10.006273543400194,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_436961"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.2636612021859,
+                      2020.2636612021859
+                    ],
+                    "value": 2020.2636612021859
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "One month ago"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "North America"
+                  },
+                  "sex": {
+                    "value": "Female"
+                  },
+                  "submitting_lab": {
+                    "value": "Bioinfoexperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1a: N1080D"
+                  },
+                  "mutations": {
+                    "ORF1a": [
+                      "N1080D"
+                    ],
+                    "nuc": [
+                      "T1066C",
+                      "A3503G",
+                      "A27690T"
+                    ]
+                  }
+                },
+                "name": "USA/LA-BIE-068/2020",
+                "node_attrs": {
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "USA"
+                  },
+                  "div": 11.011307936539342,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_426628"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.2636612021859,
+                      2020.2636612021859
+                    ],
+                    "value": 2020.2636612021859
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "New"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "North America"
+                  },
+                  "submitting_lab": {
+                    "value": "BioInfoExperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1a: H2883L"
+                  },
+                  "mutations": {
+                    "ORF1a": [
+                      "H2883L"
+                    ],
+                    "nuc": [
+                      "T4462C",
+                      "A8913T",
+                      "G14268C",
+                      "T24982C"
+                    ]
+                  }
+                },
+                "name": "USA/LA-BIE-083/2020",
+                "node_attrs": {
+                  "age": {
+                    "value": "57"
+                  },
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "USA"
+                  },
+                  "div": 12.018665063679595,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_436951"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.2636612021859,
+                      2020.2636612021859
+                    ],
+                    "value": 2020.2636612021859
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "One month ago"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "North America"
+                  },
+                  "sex": {
+                    "value": "Female"
+                  },
+                  "submitting_lab": {
+                    "value": "Bioinfoexperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1a: A486V; S: R273G"
+                  },
+                  "mutations": {
+                    "ORF1a": [
+                      "A486V"
+                    ],
+                    "S": [
+                      "R273G"
+                    ],
+                    "nuc": [
+                      "C1722T",
+                      "A22379G"
+                    ]
+                  }
+                },
+                "name": "USA/LA-BIE-087/2020",
+                "node_attrs": {
+                  "age": {
+                    "value": "93"
+                  },
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "USA"
+                  },
+                  "div": 10.005967618444156,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_436955"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.26912568306,
+                      2020.26912568306
+                    ],
+                    "value": 2020.26912568306
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "One month ago"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "North America"
+                  },
+                  "sex": {
+                    "value": "Female"
+                  },
+                  "submitting_lab": {
+                    "value": "Bioinfoexperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1a: G2868S, D3668G"
+                  },
+                  "mutations": {
+                    "ORF1a": [
+                      "G2868S",
+                      "D3668G"
+                    ],
+                    "nuc": [
+                      "G8867A",
+                      "A11268G"
+                    ]
+                  }
+                },
+                "name": "USA/LA-BIE-092/2020",
+                "node_attrs": {
+                  "age": {
+                    "value": "50"
+                  },
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "USA"
+                  },
+                  "div": 10.005970582702123,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_436959"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.2609289617487,
+                      2020.2609289617487
+                    ],
+                    "value": 2020.2609289617487
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "One month ago"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "North America"
+                  },
+                  "sex": {
+                    "value": "Male"
+                  },
+                  "submitting_lab": {
+                    "value": "Bioinfoexperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "labels": {
+                    "aa": "ORF1b: T1076I; S: L54F"
+                  },
+                  "mutations": {
+                    "ORF1b": [
+                      "T1076I"
+                    ],
+                    "S": [
+                      "L54F"
+                    ],
+                    "nuc": [
+                      "C16694T",
+                      "G21724T"
+                    ]
+                  }
+                },
+                "name": "USA/LA-BIE-074/2020",
+                "node_attrs": {
+                  "age": {
+                    "value": "45"
+                  },
+                  "author": {
+                    "author": "Amy Feehan et al",
+                    "value": "Amy Feehan et al"
+                  },
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "USA"
+                  },
+                  "div": 10.005986806946904,
+                  "division": {
+                    "value": "Louisiana"
+                  },
+                  "division_exposure": {
+                    "value": "Louisiana"
+                  },
+                  "gisaid_epi_isl": {
+                    "value": "EPI_ISL_436942"
+                  },
+                  "host": {
+                    "value": "LA"
+                  },
+                  "num_date": {
+                    "confidence": [
+                      2020.26912568306,
+                      2020.26912568306
+                    ],
+                    "value": 2020.26912568306
+                  },
+                  "originating_lab": {
+                    "value": "Ochsner Health"
+                  },
+                  "recency": {
+                    "value": "One month ago"
+                  },
+                  "region": {
+                    "value": "North America"
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 1.0
+                    },
+                    "entropy": -1.000088900581841e-12,
+                    "value": "North America"
+                  },
+                  "sex": {
+                    "value": "Male"
+                  },
+                  "submitting_lab": {
+                    "value": "Bioinfoexperts, LLC"
+                  },
+                  "url": "https://www.gisaid.org"
+                }
+              },
+              {
+                "branch_attrs": {
+                  "mutations": {}
+                },
+                "children": [
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {
+                            "nuc": [
+                              "C14925T"
+                            ]
+                          }
+                        },
+                        "name": "USA/LA-BIE-093/2020",
+                        "node_attrs": {
+                          "age": {
+                            "value": "92"
+                          },
+                          "author": {
+                            "author": "Amy Feehan et al",
+                            "value": "Amy Feehan et al"
+                          },
+                          "clade_membership": {
+                            "value": "A2a"
+                          },
+                          "country": {
+                            "confidence": {
+                              "USA": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "USA"
+                          },
+                          "div": 9.00078119641111,
+                          "division": {
+                            "value": "Louisiana"
+                          },
+                          "division_exposure": {
+                            "value": "Louisiana"
+                          },
+                          "gisaid_epi_isl": {
+                            "value": "EPI_ISL_436960"
+                          },
+                          "host": {
+                            "value": "LA"
+                          },
+                          "num_date": {
+                            "confidence": [
+                              2020.2609289617487,
+                              2020.2609289617487
+                            ],
+                            "value": 2020.2609289617487
+                          },
+                          "originating_lab": {
+                            "value": "Ochsner Health"
+                          },
+                          "recency": {
+                            "value": "One month ago"
+                          },
+                          "region": {
+                            "value": "North America"
+                          },
+                          "region_exposure": {
+                            "confidence": {
+                              "North America": 1.0
+                            },
+                            "entropy": -1.000088900581841e-12,
+                            "value": "North America"
+                          },
+                          "sex": {
+                            "value": "Female"
+                          },
+                          "submitting_lab": {
+                            "value": "Bioinfoexperts, LLC"
+                          },
+                          "url": "https://www.gisaid.org"
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "USA/LA-BIE-065/2020",
+                            "node_attrs": {
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 0.9999999999999999
+                                },
+                                "entropy": -9.99866855976916e-13,
+                                "value": "USA"
+                              },
+                              "div": 7.995447550824399,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_426628"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "New"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 0.9999999999999999
+                                },
+                                "entropy": -9.99866855976916e-13,
+                                "value": "North America"
+                              },
+                              "submitting_lab": {
+                                "value": "BioInfoExperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "mutations": {}
+                            },
+                            "name": "USA/LA-BIE-088/2020",
+                            "node_attrs": {
+                              "age": {
+                                "value": "52"
+                              },
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 0.9999999999999999
+                                },
+                                "entropy": -9.99866855976916e-13,
+                                "value": "USA"
+                              },
+                              "div": 7.995447550824399,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_436956"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2554644808743,
+                                  2020.2554644808743
+                                ],
+                                "value": 2020.2554644808743
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "One month ago"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 0.9999999999999999
+                                },
+                                "entropy": -9.99866855976916e-13,
+                                "value": "North America"
+                              },
+                              "sex": {
+                                "value": "Female"
+                              },
+                              "submitting_lab": {
+                                "value": "Bioinfoexperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000022",
+                        "node_attrs": {
+                          "clade_membership": {
+                            "value": "A2a"
+                          },
+                          "div": 7.995447550823989,
+                          "num_date": {
+                            "confidence": [
+                              2020.2399570642667,
+                              2020.2554644808743
+                            ],
+                            "value": 2020.248143827782
+                          },
+                          "region_exposure": {
+                            "confidence": {
+                              "North America": 0.9996806207203239
+                            },
+                            "entropy": 0.0028900539943791546,
+                            "value": "North America"
+                          },
+                          "country": {
+                            "confidence": {
+                              "USA": 0.9996806207203239
+                            },
+                            "entropy": 0.0028900539943791546,
+                            "value": "USA"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000021",
+                    "node_attrs": {
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "div": 7.995447550823567,
+                      "num_date": {
+                        "confidence": [
+                          2020.2346896291342,
+                          2020.2533100739129
+                        ],
+                        "value": 2020.2479147747345
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 0.9996537640691472
+                        },
+                        "entropy": 0.003105118957788009,
+                        "value": "North America"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 0.9996537640691472
+                        },
+                        "entropy": 0.003105118957788009,
+                        "value": "USA"
+                      }
+                    }
+                  },
+                  {
+                    "branch_attrs": {
+                      "mutations": {}
+                    },
+                    "children": [
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "A12820G"
+                                ]
+                              }
+                            },
+                            "name": "USA/LA-BIE-084/2020",
+                            "node_attrs": {
+                              "age": {
+                                "value": "67"
+                              },
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 9.000676919482622,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_436952"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "One month ago"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "sex": {
+                                "value": "Male"
+                              },
+                              "submitting_lab": {
+                                "value": "Bioinfoexperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "ORF1b: A941V"
+                              },
+                              "mutations": {
+                                "ORF1b": [
+                                  "A941V"
+                                ],
+                                "nuc": [
+                                  "C16289T"
+                                ]
+                              }
+                            },
+                            "name": "USA/LA-BIE-058/2020",
+                            "node_attrs": {
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 9.000691101552292,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_426628"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "New"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "submitting_lab": {
+                                "value": "BioInfoExperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000024",
+                        "node_attrs": {
+                          "clade_membership": {
+                            "value": "A2a"
+                          },
+                          "div": 7.995447550823989,
+                          "num_date": {
+                            "confidence": [
+                              2020.234912122633,
+                              2020.2636612021859
+                            ],
+                            "value": 2020.2476698581913
+                          },
+                          "region_exposure": {
+                            "confidence": {
+                              "North America": 0.9996784062326588
+                            },
+                            "entropy": 0.002907870326663427,
+                            "value": "North America"
+                          },
+                          "country": {
+                            "confidence": {
+                              "USA": 0.9996784062326588
+                            },
+                            "entropy": 0.002907870326663427,
+                            "value": "USA"
+                          }
+                        }
+                      },
+                      {
+                        "branch_attrs": {
+                          "mutations": {}
+                        },
+                        "children": [
+                          {
+                            "branch_attrs": {
+                              "mutations": {
+                                "nuc": [
+                                  "C364T"
+                                ]
+                              }
+                            },
+                            "name": "USA/LA-BIE-085/2020",
+                            "node_attrs": {
+                              "age": {
+                                "value": "56"
+                              },
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 9.000691101552292,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_436953"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "One month ago"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "sex": {
+                                "value": "Female"
+                              },
+                              "submitting_lab": {
+                                "value": "Bioinfoexperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          },
+                          {
+                            "branch_attrs": {
+                              "labels": {
+                                "aa": "ORF1a: T796I"
+                              },
+                              "mutations": {
+                                "ORF1a": [
+                                  "T796I"
+                                ],
+                                "nuc": [
+                                  "C2652T"
+                                ]
+                              }
+                            },
+                            "name": "USA/LA-BIE-082/2020",
+                            "node_attrs": {
+                              "age": {
+                                "value": "76"
+                              },
+                              "author": {
+                                "author": "Amy Feehan et al",
+                                "value": "Amy Feehan et al"
+                              },
+                              "clade_membership": {
+                                "value": "A2a"
+                              },
+                              "country": {
+                                "confidence": {
+                                  "USA": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "USA"
+                              },
+                              "div": 9.000691101552292,
+                              "division": {
+                                "value": "Louisiana"
+                              },
+                              "division_exposure": {
+                                "value": "Louisiana"
+                              },
+                              "gisaid_epi_isl": {
+                                "value": "EPI_ISL_436950"
+                              },
+                              "host": {
+                                "value": "LA"
+                              },
+                              "num_date": {
+                                "confidence": [
+                                  2020.2636612021859,
+                                  2020.2636612021859
+                                ],
+                                "value": 2020.2636612021859
+                              },
+                              "originating_lab": {
+                                "value": "Ochsner Health"
+                              },
+                              "recency": {
+                                "value": "One month ago"
+                              },
+                              "region": {
+                                "value": "North America"
+                              },
+                              "region_exposure": {
+                                "confidence": {
+                                  "North America": 1.0
+                                },
+                                "entropy": -1.000088900581841e-12,
+                                "value": "North America"
+                              },
+                              "sex": {
+                                "value": "Female"
+                              },
+                              "submitting_lab": {
+                                "value": "Bioinfoexperts, LLC"
+                              },
+                              "url": "https://www.gisaid.org"
+                            }
+                          }
+                        ],
+                        "name": "NODE_0000025",
+                        "node_attrs": {
+                          "clade_membership": {
+                            "value": "A2a"
+                          },
+                          "div": 7.995447550823989,
+                          "num_date": {
+                            "confidence": [
+                              2020.23491308905,
+                              2020.2636612021859
+                            ],
+                            "value": 2020.2476698581913
+                          },
+                          "region_exposure": {
+                            "confidence": {
+                              "North America": 0.9996784062326588
+                            },
+                            "entropy": 0.002907870326663427,
+                            "value": "North America"
+                          },
+                          "country": {
+                            "confidence": {
+                              "USA": 0.9996784062326588
+                            },
+                            "entropy": 0.002907870326663427,
+                            "value": "USA"
+                          }
+                        }
+                      }
+                    ],
+                    "name": "NODE_0000023",
+                    "node_attrs": {
+                      "clade_membership": {
+                        "value": "A2a"
+                      },
+                      "div": 7.995447550823567,
+                      "num_date": {
+                        "confidence": [
+                          2020.2364702449925,
+                          2020.2486319121997
+                        ],
+                        "value": 2020.2393767208544
+                      },
+                      "region_exposure": {
+                        "confidence": {
+                          "North America": 0.9996250495910953
+                        },
+                        "entropy": 0.0033327576879791454,
+                        "value": "North America"
+                      },
+                      "country": {
+                        "confidence": {
+                          "USA": 0.9996250495910953
+                        },
+                        "entropy": 0.0033327576879791454,
+                        "value": "USA"
+                      }
+                    }
+                  }
+                ],
+                "name": "NODE_0000020",
+                "node_attrs": {
+                  "clade_membership": {
+                    "value": "A2a"
+                  },
+                  "div": 7.995447550823145,
+                  "num_date": {
+                    "confidence": [
+                      2020.236763773564,
+                      2020.2429271671112
+                    ],
+                    "value": 2020.2393767208544
+                  },
+                  "region_exposure": {
+                    "confidence": {
+                      "North America": 0.9996495057821924
+                    },
+                    "entropy": 0.0031390230866356634,
+                    "value": "North America"
+                  },
+                  "country": {
+                    "confidence": {
+                      "USA": 0.9996495057821924
+                    },
+                    "entropy": 0.0031390230866356634,
+                    "value": "USA"
+                  }
+                }
+              }
+            ],
+            "name": "NODE_0000028",
+            "node_attrs": {
+              "clade_membership": {
+                "value": "A2a"
+              },
+              "div": 7.995447550822723,
+              "num_date": {
+                "confidence": [
+                  2020.2364882743693,
+                  2020.2421384027393
+                ],
+                "value": 2020.2397952441243
+              },
+              "region_exposure": {
+                "confidence": {
+                  "North America": 0.9999999982598109
+                },
+                "entropy": 3.683653908748224e-08,
+                "value": "North America"
+              },
+              "country": {
+                "confidence": {
+                  "USA": 0.9999999982598109
+                },
+                "entropy": 3.683653908748224e-08,
+                "value": "USA"
+              }
+            }
+          }
+        ],
+        "name": "NODE_0000001",
+        "node_attrs": {
+          "clade_membership": {
+            "value": "A2a"
+          },
+          "div": 6.996116876344182,
+          "num_date": {
+            "confidence": [
+              2020.1972301757671,
+              2020.2388436027177
+            ],
+            "value": 2020.2375762489528
+          },
+          "region_exposure": {
+            "confidence": {
+              "North America": 0.9999999496153726
+            },
+            "entropy": 8.970247275644603e-07,
+            "value": "North America"
+          },
+          "country": {
+            "confidence": {
+              "USA": 0.9999999496153726
+            },
+            "entropy": 8.970247275644603e-07,
+            "value": "USA"
+          }
+        }
+      }
+    ],
+    "name": "NODE_0000000",
+    "node_attrs": {
+      "clade_membership": {
+        "value": "unassigned"
+      },
+      "div": 0,
+      "num_date": {
+        "confidence": [
+          2019.937349344464,
+          2019.9809418531213
+        ],
+        "value": 2019.9569954455199
+      },
+      "region_exposure": {
+        "confidence": {
+          "Asia": 0.9600789192000413,
+          "North America": 0.039921080799958666
+        },
+        "entropy": 0.16769325711815442,
+        "value": "Asia"
+      },
+      "country": {
+        "confidence": {
+          "China": 0.9600789192000413,
+          "USA": 0.039921080799958666
+        },
+        "entropy": 0.16769325711815442,
+        "value": "China"
+      }
+    }
+  },
+  "version": "v2"
+}
